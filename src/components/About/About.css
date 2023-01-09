@@ -1,0 +1,57 @@
+.about {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blogs,
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+}
+
+.blog-title,
+.tm-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  border-left: 8px solid blue;
+  padding-left: 40px;
+}
+
+.blog-detail,
+.tm-detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tm-detail img {
+  margin-top: 20px;
+  padding-right: 20px;
+}
+
+.testimonial {
+  margin-top: 40px;
+}
+
+.testimonial span {
+  font-weight: 700;
+}
+
+.tm-detail {
+  margin-top: 20px;
+}
+
+.tm-detail img {
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+}

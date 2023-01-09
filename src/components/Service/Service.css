@@ -1,0 +1,157 @@
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.heading {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: blue;
+  width: 70%;
+  margin: 50px 0;
+}
+
+.heading img {
+  margin-top: 20px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.a-title {
+  font-size: 1.6rem;
+  width: 70%;
+  font-weight: 700;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 80%;
+  height: 250px;
+}
+.c-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: orange;
+}
+
+.service-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-quotes {
+  width: 80%;
+  font-size: 1.2rem;
+}
+
+.service-card {
+  border: 1px gray solid;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  article p {
+    width: 40%;
+    line-height: 2rem;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .service-card {
+    width: 60%;
+    margin-bottom: 0;
+  }
+
+  .service-container {
+  margin-left: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-template-areas:
+      "que    card"
+      "card2  card3"
+      "card4  que2 ";
+  }
+
+  .service-quotes {
+    grid-area: que;
+    width: initial;
+    grid-row: 0.5fr;
+    width: 40%;
+  }
+
+  .service-card1 {
+    grid-area: card;
+  }
+  .service-card2 {
+    grid-area: card2;
+  }
+
+  .service-card3 {
+    grid-area: card3;
+  }
+
+  .service-card4 {
+    grid-area: card4;
+  }
+
+  .que2 {
+    grid-area: que2;
+  }
+}

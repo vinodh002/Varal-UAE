@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300&display=swap");
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 10vh;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+
+
+.nav-ul {
+  display: none;
+}
+
+.menu img {
+  width: 40px;
+  height: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    width: 100%;
+    padding: 50px 0;
+  }
+
+  .nav-ul {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    align-items: center;
+  }
+
+  .menu {
+    display: none;
+  }
+}

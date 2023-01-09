@@ -1,0 +1,105 @@
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+u {
+  text-decoration-color: orange;
+}
+
+.search-bar {
+  width: 100%;
+  border: 2px blue solid;
+  height: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-size: 1rem;
+  color: blue;
+  font-weight: 500;
+}
+.title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.home-img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.info {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: blue;
+}
+
+p {
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 20px;
+  color: blue;
+  border: none;
+  background-color: white;
+  border: blue 1px solid;
+}
+
+button:hover {
+  background-color: blue;
+  color: white;
+}
+
+input::placeholder { /* Microsoft Edge */
+  color: blue;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 1024px) {
+  .home {
+    position: relative;
+  }
+
+  .search-bar {
+    width: 30%;
+    position: relative;
+    left: 60%;
+    top: 20px;
+  }
+
+  .home-img {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+  }
+
+  .quote {
+    margin-top: 30px;
+  }
+
+  .title {
+    width: 40%;
+    font-size: 3rem;
+  }
+
+ .home p {
+    width: 40%;
+  }
+
+  .btns {
+    justify-content: start;
+    align-items: flex-start;
+  }
+}
